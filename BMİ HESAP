@@ -1,0 +1,19 @@
+# Kullanıcıdan kilo ve boy bilgisini alma
+kilo = float(input("Kilonuzu kilogram cinsinden girin: "))
+boy = float(input("Boyunuzu metre cinsinden girin: "))
+
+# BMI hesaplama
+bmi = kilo / (boy ** 2)
+
+# BMI değerini yazdırma
+print("Vücut Kitle İndeksiniz (BMI): {:.2f}".format(bmi))
+
+# BMI değerine göre durumu belirleme
+if bmi < 18.5:
+    print("Durum: Zayıf")
+elif 18.5 <= bmi < 24.9:
+    print("Durum: Normal")
+elif 25 <= bmi < 29.9:
+    print("Durum: Kilolu")
+else:
+    print("Durum: Obez")
